@@ -1,0 +1,198 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ETicaretAPI.Domain\ETicaretAPI.Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Abstractions\" />
+    <None Remove="Repositories\" />
+    <None Remove="Repositories\ICustomerRepositories\" />
+    <None Remove="Repositories\IOrderRepositories\" />
+    <None Remove="Repositories\IProductRepositories\" />
+    <None Remove="ViewModels\" />
+    <None Remove="ViewModels\Products\" />
+    <None Remove="Validators\" />
+    <None Remove="Validators\Products\" />
+    <None Remove="RequestParameters\" />
+    <None Remove="Services\" />
+    <None Remove="Repositories\IFileRepositories\" />
+    <None Remove="Repositories\IInvoiceFileRepositories\" />
+    <None Remove="Repositories\IProductImageFileRepositories\" />
+    <None Remove="Abstractions\Storage\" />
+    <None Remove="Abstractions\Storage\Local\" />
+    <None Remove="Abstractions\Storage\Azure\" />
+    <None Remove="Features\" />
+    <None Remove="Features\Commands\" />
+    <None Remove="Features\Queries\" />
+    <None Remove="Features\Commands\Product\" />
+    <None Remove="Features\Commands\Product\CreateProduct\" />
+    <None Remove="Features\Queries\Product\" />
+    <None Remove="Features\Queries\Product\GetAllProducts\" />
+    <None Remove="Features\Commands\ProductImageFile\" />
+    <None Remove="Features\Queries\ProductImageFile\" />
+    <None Remove="Features\Commands\Product\RemoveProduct\" />
+    <None Remove="Features\Commands\Product\UpdateProduct\" />
+    <None Remove="Features\Queries\Product\GetByIdProduct\" />
+    <None Remove="Features\Commands\ProductImageFile\UploadProductImage\" />
+    <None Remove="Features\Queries\ProductImageFile\GetProductmages\" />
+    <None Remove="Features\Commands\ProductImageFile\RemoveProductImage\" />
+    <None Remove="Features\Commands\AppUser\" />
+    <None Remove="Features\Commands\AppUser\CreateUser\" />
+    <None Remove="Exceptions\" />
+    <None Remove="Features\Queries\AppUser\" />
+    <None Remove="Features\Queries\AppUser\LoginUser\" />
+    <None Remove="Abstractions\Token\" />
+    <None Remove="DTOs\" />
+    <None Remove="Abstractions\Services\" />
+    <None Remove="DTOs\User\" />
+    <None Remove="Abstractions\Services\Authentication\" />
+    <None Remove="Features\Commands\RefreshTokenLogin\" />
+    <None Remove="Abstractions\Hubs\" />
+    <None Remove="Repositories\IBasketItemRepositories\" />
+    <None Remove="Repositories\IBasketRepositories\" />
+    <None Remove="ViewModels\Baskets\" />
+    <None Remove="Features\Commands\Basket\" />
+    <None Remove="Features\Queries\Basket\" />
+    <None Remove="Features\Commands\Basket\AddItemToBasket\" />
+    <None Remove="Features\Commands\Basket\UpdateQuantity\" />
+    <None Remove="Features\Commands\Basket\RemoveBasketItem\" />
+    <None Remove="Features\Queries\Basket\GetBasketItems\" />
+    <None Remove="Features\Commands\ProductImageFile\ChangeShowCaseImage\" />
+    <None Remove="Features\Commands\Order\" />
+    <None Remove="Features\Commands\Order\CreateOrder\" />
+    <None Remove="DTOs\Order\" />
+    <None Remove="Features\Queries\Order\" />
+    <None Remove="Features\Queries\Order\GetAll\" />
+    <None Remove="Features\Queries\Order\GetOrderById\" />
+    <None Remove="Features\Commands\AppUser\PasswordReset\" />
+    <None Remove="Features\Commands\AppUser\VerifyResetToken\" />
+    <None Remove="Helpers\" />
+    <None Remove="Features\Commands\AppUser\UpdatePassword\" />
+    <None Remove="Repositories\ICompletedOrderRepositories\" />
+    <None Remove="Features\Commands\Order\CompleteOrder\" />
+    <None Remove="CustomAttributes\" />
+    <None Remove="Enums\" />
+    <None Remove="Const\" />
+    <None Remove="Abstractions\Services\Configurations\" />
+    <None Remove="DTOs\Configuration\" />
+    <None Remove="Features\Queries\Role\" />
+    <None Remove="Features\Queries\Role\GetRoleById\" />
+    <None Remove="Features\Queries\Role\GetRoles\" />
+    <None Remove="Features\Commands\Role\" />
+    <None Remove="Features\Commands\Role\CreateRole\" />
+    <None Remove="Features\Commands\Role\DeleteRole\" />
+    <None Remove="Features\Commands\Role\UpdateRole\" />
+    <None Remove="Features\Queries\AuthorizationEndPoint\" />
+    <None Remove="Features\Queries\AuthorizationEndPoint\GetRolesToEndPoint\" />
+    <None Remove="Features\Commands\AuthorizationEndPoint\" />
+    <None Remove="Features\Commands\AuthorizationEndPoint\AssignRoleEndPoint\" />
+    <None Remove="Repositories\IEndPointRepositories\" />
+    <None Remove="Repositories\IMenuRepositories\" />
+    <None Remove="Features\Queries\AppUser\GetAllUsers\" />
+    <None Remove="Features\Queries\AppUser\GetRolesToUser\" />
+    <None Remove="Features\Commands\AppUser\AssignRoleToUser\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Abstractions\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="Repositories\ICustomerRepositories\" />
+    <Folder Include="Repositories\IOrderRepositories\" />
+    <Folder Include="Repositories\IProductRepositories\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="ViewModels\Products\" />
+    <Folder Include="Validators\" />
+    <Folder Include="Validators\Products\" />
+    <Folder Include="RequestParameters\" />
+    <Folder Include="Services\" />
+    <Folder Include="Repositories\IFileRepositories\" />
+    <Folder Include="Repositories\IInvoiceFileRepositories\" />
+    <Folder Include="Repositories\IProductImageFileRepositories\" />
+    <Folder Include="Abstractions\Storage\" />
+    <Folder Include="Abstractions\Storage\Local\" />
+    <Folder Include="Abstractions\Storage\Azure\" />
+    <Folder Include="Features\" />
+    <Folder Include="Features\Commands\" />
+    <Folder Include="Features\Queries\" />
+    <Folder Include="Features\Commands\Product\" />
+    <Folder Include="Features\Commands\Product\CreateProduct\" />
+    <Folder Include="Features\Queries\Product\" />
+    <Folder Include="Features\Queries\Product\GetAllProducts\" />
+    <Folder Include="Features\Commands\ProductImageFile\" />
+    <Folder Include="Features\Queries\ProductImageFile\" />
+    <Folder Include="Features\Commands\Product\RemoveProduct\" />
+    <Folder Include="Features\Commands\Product\UpdateProduct\" />
+    <Folder Include="Features\Queries\Product\GetByIdProduct\" />
+    <Folder Include="Features\Commands\ProductImageFile\UploadProductImage\" />
+    <Folder Include="Features\Queries\ProductImageFile\GetProductmages\" />
+    <Folder Include="Features\Commands\ProductImageFile\RemoveProductImage\" />
+    <Folder Include="Features\Commands\AppUser\" />
+    <Folder Include="Features\Commands\AppUser\CreateUser\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="Features\Queries\AppUser\" />
+    <Folder Include="Features\Queries\AppUser\LoginUser\" />
+    <Folder Include="Abstractions\Token\" />
+    <Folder Include="DTOs\" />
+    <Folder Include="Abstractions\Services\" />
+    <Folder Include="DTOs\User\" />
+    <Folder Include="Abstractions\Services\Authentication\" />
+    <Folder Include="Features\Commands\RefreshTokenLogin\" />
+    <Folder Include="Abstractions\Hubs\" />
+    <Folder Include="Repositories\IBasketItemRepositories\" />
+    <Folder Include="Repositories\IBasketRepositories\" />
+    <Folder Include="ViewModels\Baskets\" />
+    <Folder Include="Features\Commands\Basket\" />
+    <Folder Include="Features\Queries\Basket\" />
+    <Folder Include="Features\Commands\Basket\AddItemToBasket\" />
+    <Folder Include="Features\Commands\Basket\UpdateQuantity\" />
+    <Folder Include="Features\Commands\Basket\RemoveBasketItem\" />
+    <Folder Include="Features\Queries\Basket\GetBasketItems\" />
+    <Folder Include="Features\Commands\ProductImageFile\ChangeShowCaseImage\" />
+    <Folder Include="Features\Commands\Order\" />
+    <Folder Include="Features\Commands\Order\CreateOrder\" />
+    <Folder Include="DTOs\Order\" />
+    <Folder Include="Features\Queries\Order\" />
+    <Folder Include="Features\Queries\Order\GetAll\" />
+    <Folder Include="Features\Queries\Order\GetOrderById\" />
+    <Folder Include="Features\Commands\AppUser\PasswordReset\" />
+    <Folder Include="Features\Commands\AppUser\VerifyResetToken\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Features\Commands\AppUser\UpdatePassword\" />
+    <Folder Include="Repositories\ICompletedOrderRepositories\" />
+    <Folder Include="Features\Commands\Order\CompleteOrder\" />
+    <Folder Include="CustomAttributes\" />
+    <Folder Include="Enums\" />
+    <Folder Include="Const\" />
+    <Folder Include="Abstractions\Services\Configurations\" />
+    <Folder Include="DTOs\Configuration\" />
+    <Folder Include="Features\Queries\Role\" />
+    <Folder Include="Features\Queries\Role\GetRoleById\" />
+    <Folder Include="Features\Queries\Role\GetRoles\" />
+    <Folder Include="Features\Commands\Role\" />
+    <Folder Include="Features\Commands\Role\CreateRole\" />
+    <Folder Include="Features\Commands\Role\DeleteRole\" />
+    <Folder Include="Features\Commands\Role\UpdateRole\" />
+    <Folder Include="Features\Queries\AuthorizationEndPoint\" />
+    <Folder Include="Features\Queries\AuthorizationEndPoint\GetRolesToEndPoint\" />
+    <Folder Include="Features\Commands\AuthorizationEndPoint\" />
+    <Folder Include="Features\Commands\AuthorizationEndPoint\AssignRoleEndPoint\" />
+    <Folder Include="Repositories\IEndPointRepositories\" />
+    <Folder Include="Repositories\IMenuRepositories\" />
+    <Folder Include="Features\Queries\AppUser\GetAllUsers\" />
+    <Folder Include="Features\Queries\AppUser\GetRolesToUser\" />
+    <Folder Include="Features\Commands\AppUser\AssignRoleToUser\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.0" />
+    <PackageReference Include="FluentValidation" Version="11.11.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.11.0" />
+    <PackageReference Include="MediatR" Version="8.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.0.0" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\ETicaretAPI.Application\ETicaretAPI.Application.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Filters\" />
+    <None Remove="Services\" />
+    <None Remove="Operations\" />
+    <None Remove="Services\Storage\" />
+    <None Remove="Services\Storage\Local\" />
+    <None Remove="Services\Storage\AWS\" />
+    <None Remove="Services\Storage\Azure\" />
+    <None Remove="Enums\" />
+    <None Remove="Services\Token\" />
+    <None Remove="Services\Configurations\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Filters\" />
+    <Folder Include="Services\" />
+    <Folder Include="Operations\" />
+    <Folder Include="Services\Storage\" />
+    <Folder Include="Services\Storage\Local\" />
+    <Folder Include="Services\Storage\AWS\" />
+    <Folder Include="Services\Storage\Azure\" />
+    <Folder Include="Enums\" />
+    <Folder Include="Services\Token\" />
+    <Folder Include="Services\Configurations\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.0" />
+  </ItemGroup>
+</Project>

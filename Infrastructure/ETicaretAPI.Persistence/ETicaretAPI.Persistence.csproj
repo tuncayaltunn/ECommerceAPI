@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\ETicaretAPI.Application\ETicaretAPI.Application.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Contexts\" />
+    <None Remove="Repositories\" />
+    <None Remove="Repositories\FileRepositories\" />
+    <None Remove="Repositories\InvoiceFileRepositories\" />
+    <None Remove="Repositories\ProductImageFileRepositories\" />
+    <None Remove="Services\" />
+    <None Remove="Repositories\BasketRepositories\" />
+    <None Remove="Repositories\BasketItemRepositories\" />
+    <None Remove="Repositories\CompletedOrderRepositories\" />
+    <None Remove="Repositories\EndpointRepositories\" />
+    <None Remove="Repositories\MenuRepositories\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Contexts\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="Repositories\FileRepositories\" />
+    <Folder Include="Repositories\InvoiceFileRepositories\" />
+    <Folder Include="Repositories\ProductImageFileRepositories\" />
+    <Folder Include="Services\" />
+    <Folder Include="Repositories\BasketRepositories\" />
+    <Folder Include="Repositories\BasketItemRepositories\" />
+    <Folder Include="Repositories\CompletedOrderRepositories\" />
+    <Folder Include="Repositories\EndpointRepositories\" />
+    <Folder Include="Repositories\MenuRepositories\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.0" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
+  </ItemGroup>
+</Project>
