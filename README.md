@@ -20,7 +20,6 @@ Bu proje, bir bootcamp eğitimi kapsamında bir eğitmen rehberliğinde gelişti
 - [Loglama](#loglama)
 - [Test](#test)
 - [Bilinen Sınırlamalar](#bilinen-sınırlamalar)
-- [Lisans](#lisans)
 
 ---
 
@@ -316,6 +315,3 @@ Bu proje öğretim amaçlı geliştirildiği için bilinçli olarak bazı yerler
 
 ---
 
-## Lisans
-
-Bu proje MIT lisansı ile dağıtılmaktadır. Detaylar için [LICENSE](LICENSE) dosyasına bakınız.
